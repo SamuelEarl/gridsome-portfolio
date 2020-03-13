@@ -1,0 +1,61 @@
+// This will contain the variables or mixins for your breakpoints.
+
+// ===============================================
+// w3pro.css Media Queries
+// It is probably best to use the default media query ranges that are used in w3pro.css
+// to avoid styling issues.
+// ===============================================
+// x-small: 0px - 600px | Extra small devices (phones, 600px and smaller)
+// small  : 601px - 767px | Small devices (portrait tablets and large phones, 601px and larger)
+// medium : 768px - 992px | Medium devices (landscape tablets, 768px and larger)
+// large  : 993px - 1199px | Large devices (laptops/desktops, 993px and larger)
+// x-large: 1200px and larger | Extra large devices (large laptops and desktops, 1200px and larger)
+
+// I typically only create specific designs for the following ranges:
+// * 0px - 767px (x-small and small viewports)
+// * 768px - 1199px (medium and large viewports)
+// * 1200px and larger (x-large viewports)
+// However, the small and large media query ranges are available if additional layout designs are
+// needed.
+
+// For reference, here are the viewport sizes of some common devices:
+// -------------------------------------------------------------------
+// * iPhone 8: 375px wide x 667px high (x-small range)
+// * iPad (in portrait mode): 768px wide x 1024px high (medium range)
+// * iPad Pro (in portrait mode): 1024px wide x 1366px high (large range)
+// * Macbook Pro 15": 1440px wide x 900px high (x-large range)
+
+// On large screens you should wrap your layout in a container to prevent weird layout issues on
+// really large screens. For example:
+// #container {
+//   margin: 0 auto;
+//   max-width: 18000px;  // A really large width
+// }
+
+// If you need to detect orientation changes on mobile devices, then you should probably do that programmatically. Here are some posts to get you started:
+// * https://forum.playcanvas.com/t/is-there-a-way-to-detect-if-the-user-has-flipped-their-phone-or-device/1616
+// * https://davidwalsh.name/orientation-change. Read the comments below this article for more ideas.
+
+
+// Example: @media $xs-up {}
+$xs-up = "(min-width: 0px)";
+$xs-only = "(min-width: 0px) and (max-width: 600px)";
+
+// Example: @media $s-up {}
+$s-up = "(min-width: 601px)";
+$xs-only = "(min-width: 601px) and (max-width: 767px)";
+
+// Example: @media $m-up {}
+$m-up = "(min-width: 768px)";
+$m-only = "(min-width: 768px) and (max-width: 992px)";
+
+// Example: @media $l-up {}
+$l-up = "(min-width: 993px)";
+$l-only = "(min-width: 993px) and (max-width: 1199px)";
+
+// Example: @media $xl-up {}
+$xl-up = "(min-width: 1200px)";
+// NOTE: Technically speaking, this should be $xl-only instead of $xl-up because there is no media
+// query above x-large. But since the styles in this project use the $xs-up and $m-up media
+// queries (instead of $xs-only and $m-only), I wanted to stay consistent with the syntax used by
+// those media queries.
