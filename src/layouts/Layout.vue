@@ -32,9 +32,12 @@ export default {
 <style scoped lang="stylus">
 @media $xs-up {
   .layout {
+    background-color: $cyan;
+    min-height: 100vh;
 
     .main {
       padding-top: 0;
+      padding-bottom: 20px;
     }
   }
 }
@@ -44,6 +47,7 @@ export default {
 
     .main {
       padding-top: 70px;
+      padding-bottom: 30px;
     }
   }
 }

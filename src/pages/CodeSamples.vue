@@ -45,7 +45,7 @@ export default {
     // border-bottom: 1px solid lightgray;
 
     h3 {
-      border-bottom: 1px solid lightgray;
+      border-bottom: 1px solid $gray80;
     }
   }
 }

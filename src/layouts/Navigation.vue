@@ -6,14 +6,14 @@
         <button
           class="mobile-menu-btn"
           title="Open Menu"
-          @click="showMobileNav = !showMobileNav"
+          @click="showMobileNav"
         >
           <MenuIcon title="Open Menu" />
         </button>
       </div>
     </div>
 
-    <div class="navbar-wrapper" v-if="showNav">
+    <div id="navbar-wrapper">
       <nav class="navbar container">
         <div class="site-name-wrapper">
           <g-link class="site-name" to="/" exact>{{ $static.metadata.siteName }}</g-link>
@@ -48,23 +48,14 @@ export default {
     MenuIcon,
   },
 
-  data() {
-    return {
-      showMobileNav: false,
-    };
-  },
-
-  computed: {
-    showNav() {
-      const width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-
-      // If the viewport width is xlMin or larger, then show the nav bar.
-      if (width >= this.$xlMin) {
-        return true;
+  methods: {
+    showMobileNav() {
+      const nav = document.getElementById("navbar-wrapper");
+      if (nav.style.display === "block") {
+        nav.style.display = "none";
       }
-      // If the viewport width is less than xlMin, then return the value from this.showMobileNav.
       else {
-        return this.showMobileNav;
+        nav.style.display = "block";
       }
     }
   }
@@ -91,7 +82,8 @@ export default {
       }
     }
 
-    .navbar-wrapper {
+    #navbar-wrapper {
+      display: none;
       position: fixed;
       top: 50px;
       width: 100%;
@@ -104,7 +96,7 @@ export default {
         align-items: center;
 
         .site-name-wrapper {
-          padding: 5px 0;
+          padding-bottom: 5px;
 
           .site-name {
             font-size: 1.6rem;
@@ -135,7 +127,8 @@ export default {
       display: none;
     }
 
-    .navbar-wrapper {
+    #navbar-wrapper {
+      display: block;
       position: fixed;
       top: 0;
       // width: 100%;

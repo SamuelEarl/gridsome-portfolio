@@ -80,14 +80,14 @@ export default {
   .home {
 
     .parallax {
-      // The image used
+      // The image used.
       // background-image: url("../assets/img/canyon-sky-landscape.jpg");
       background-image: url("../assets/img/a-view-of-the-stars-on-night-sky.jpg");
 
-      // Set a specific height. The navbar height is 60px, so if I subtract the navbar height from the parallax height, then I can get rid of the scrollbars.
-      height: calc(100vh - 60px);
+      // Set a specific height.
+      height: 100vh;
 
-      // Create the parallax scrolling effect
+      // Create the parallax scrolling effect.
       background-attachment: fixed;
       background-position: center top;
       background-repeat: no-repeat;
