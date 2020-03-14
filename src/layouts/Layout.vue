@@ -29,7 +29,7 @@ export default {
 };
 </script>
 
-<style scoped lang="stylus">
+<style lang="stylus" scoped>
 @media $xs-up {
   .layout {
     background-color: $cyan;

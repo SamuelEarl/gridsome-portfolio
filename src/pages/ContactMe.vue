@@ -4,7 +4,8 @@
 
     <p>If you need help with your business or new product launch, then please contact me.</p>
 
-    <p>LinkedIn: <strong>linkedin (dot) com/in/samuel-earl-44034723</strong></p>
+    <h2>LinkedIn</h2>
+    <p><strong>linkedin (dot) com/in/samuel-earl-44034723</strong></p>
   </Layout>
 </template>
 

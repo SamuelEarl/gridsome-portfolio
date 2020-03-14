@@ -17,25 +17,47 @@ body, div {
 // typographical styles for applicable HTML elements (e.g. <h1>, <p>).
 // ====================================
 @media $s-up {
-  h1 { font-size: 2.0rem; }
-  h2 { font-size: 1.75rem; }
-  h3 { font-size: 1.5rem; }
-  h4 { font-size: 1.25rem; }
-  h5 { font-size: 1.0rem; }
+  h1 { font-size: 2.25rem; }
+  h2 { font-size: 1.5rem; }
+  h3 { font-size: 1.25rem; }
+  h4 { font-size: 1.15rem; }
+  h5 { font-size: 1rem; }
   p { line-height: 1.45rem; }
   li { line-height: 1.45rem; }
 }
 
-h1, h2, h3, h4, h5 {
+h1 {
+  font-family: $cursive-font-stack;
+  color: $text;
+}
+
+h2, h3, h4, h5 {
   font-family: $sans-font-stack;
+  color: $text;
+}
+
+h2 {
+  padding: 3px 5px;
+  background-color: $text;
+  color: white;
 }
 
 div, p, ul, li, span {
   font-family: $sans-font-stack;
+  color: $text;
 }
 
 p {
   margin-bottom: 16px;
+  line-height: 1.6rem;
+}
+
+ul {
+  margin-left: 20px;
+}
+
+li {
+  line-height: 1.75rem;
 }
 
 
@@ -103,9 +125,9 @@ $global-radius = 0px;
 // Styled HTML Elements
 // ==================================================
 a:link, a:visited {
-  color: $dark-blue;
+  color: $text;
   text-decoration: none;
-  // border-bottom: 1px dotted $blue;
+  border-bottom: 1px dotted $text;
 }
 
 a:hover {

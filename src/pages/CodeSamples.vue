@@ -3,7 +3,7 @@
     <h1>Code Samples</h1>
 
     <div class="content">
-      <h3>Record Real-time Data And Download Those Data As A CSV File</h3>
+      <h2 id="record-download-data">Record Real-time Data And Download Those Data As A CSV File</h2>
 
       <p><em>Click the "Result" tab in the JSFiddle window below to see the widget and instructions.</em></p>
 
@@ -15,7 +15,7 @@
     </div>
 
     <div class="content">
-      <h3>Input Field That Will Shrink To Fit The Width Of The Text</h3>
+      <h2>Input Field That Will Shrink To Fit The Width Of The Text</h2>
 
       <p><em>Click the "Result" tab in the JSFiddle window below to see the widget and instructions.</em></p>
 
@@ -38,15 +38,11 @@ export default {
 }
 </script>
 
-<style scoped lang="stylus">
+<style lang="stylus" scoped>
 @media $xs-up {
   .content {
-    margin: 25px 0 50px 0;
+    margin-bottom: 50px;
     // border-bottom: 1px solid lightgray;
-
-    h3 {
-      border-bottom: 1px solid $gray80;
-    }
   }
 }
 

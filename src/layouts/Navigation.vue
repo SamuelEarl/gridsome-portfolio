@@ -62,7 +62,7 @@ export default {
 };
 </script>
 
-<style scoped lang="stylus">
+<style lang="stylus" scoped>
 @media $xs-up {
   .navigation {
 
@@ -148,7 +148,9 @@ export default {
           .site-name {
             font-size: 1.6rem;
             // color: lighten($primary, 75%);
-
+            &:hover {
+              color: white;
+            }
             &.active {
               color: white;
             }
@@ -165,7 +167,9 @@ export default {
             // padding: 7px 0;
             // font-size: 1.25rem;
             // color: white;
-
+            &:hover {
+              color: white;
+            }
             &.active {
               color: white;
             }

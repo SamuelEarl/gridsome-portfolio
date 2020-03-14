@@ -51,7 +51,7 @@ export default {
 }
 </script>
 
-<style scoped lang="stylus">
+<style lang="stylus" scoped>
 @media $xs-up {
   .home {
 
@@ -102,7 +102,6 @@ export default {
         height: 100%;
         background-color: rgba(0, 0, 0, 0.60);
         z-index: 10;
-        color: white;
 
         .profile {
           display: flex;
@@ -119,13 +118,17 @@ export default {
 
             h1 {
               font-size: 4rem;
+              color: white;
             }
 
             .tagline {
               font-size: 2.2rem;
+              background-color: transparent;
+              color: white;
 
               span {
                 font-family: inherit;
+                color: inherit;
               }
             }
           }
@@ -133,6 +136,10 @@ export default {
 
         .content {
           font-size: 1.2rem;
+
+          p {
+            color: white;
+          }
         }
       }
     }
