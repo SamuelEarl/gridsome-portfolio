@@ -19,27 +19,27 @@
     </div>
 
     <div class="content">
-      <h2>Data Dashboard</h2>
+      <h2>Real-time Data Dashboard</h2>
 
       <p>I did some work for a large manufacturing company that needed a second-by-second data dashboard. This app provides real-time status updates on various stations and equipment throughout the manufacturing facility. The front-end is a single-page application (SPA) written in Vue.js, Vue Router, and Vuex. All the UI components are custom made and the entire app (including the navigation and all the various windows) is completely mobile-responsive.</p>
 
       <p><strong>These are some of the features in this app:</strong></p>
 
       <h3>Real-time Data Via WebSockets</h3>
-
-      <p>The data from the back-end is fed to the UI and inserted into a real-time dashboard that includes summary data and live charts.</p>
+      <g-image alt="Real-time data" src="~/assets/img/real-time-data-via-websockets.gif" class="image" />
+      <p class="caption">The data from the back-end is fed to the UI and inserted into a real-time dashboard that includes summary data and live charts.</p>
 
       <h3>Interactive Charts With D3.js</h3>
-
-      <p>Users can change the data ranges that they want displayed for each chart. When a user hovers over a data point, the data for that specific point is displayed.</p>
+      <g-image alt="Interactive charts" src="~/assets/img/interactive-charts.gif" class="image" />
+      <p class="caption">These charts were custom created using D3.js. Users can change the data ranges that they want displayed for each chart. Also, when a user hovers over a data point, the data for that specific point is displayed.</p>
 
       <h3>Record And Download Data Without Servers</h3>
+      <g-image alt="Record and download data" src="~/assets/img/record-and-download-data.gif" class="image" />
+      <p class="caption">Users can record data and download the recorded data as a CSV file for further analysis. The downloaded CSV file is saved to the user's computer. The data recording and downloading feature is completely implemented in the browser (i.e. no server-side code involved). See <a href="/code-samples#record-download-data">my first code sample</a> for a working example that you can try yourself.</p>
 
-      <p>Users can record data and download the recorded data as a CSV file for further analysis. The downloaded CSV file is saved to the user's computer. The data recording and downloading feature is completely implemented in the browser (i.e. no server-side code involved). See <a href="/code-samples#record-download-data">my first code sample</a> for a working example that you can try yourself.</p>
-
-      <h3>Collapsible Side Panel</h3>
-
-      <p>This feature allows users to get a larger view of the charts for a bit more of a detailed view.</p>
+      <h3>Collapsible Side Panel With Auto-adjusting Charts</h3>
+      <g-image alt="Auto-adjusting charts" src="~/assets/img/auto-adjusting-charts.gif" class="image" />
+      <p class="caption">This feature allows users to get a larger view of the charts for a bit more of a detailed view. The real magic is that the charts auto-adjust their size to fit the available space.</p>
 
 
       <p><strong>NOTE:</strong> I wrote the original back-end server in Node.js with MongoDB and WebSockets. However, after working on the project for a while, our team realized that Go would be a better fit for what we needed.</p>
@@ -87,6 +87,12 @@ export default {
 @media $xs-up {
   .content {
     margin-bottom: 50px;
+
+    .caption {
+      margin-top: 15px;
+      margin-bottom: 30px;
+      font-style: italic;
+    }
   }
 }
 </style>
