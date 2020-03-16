@@ -22,7 +22,7 @@
           <g-link class="navlink" to="/recent-projects" exact>Recent Projects</g-link>
           <g-link class="navlink" to="/code-samples" exact>Code Samples</g-link>
           <g-link class="navlink" to="/contact-me" exact>Contact Me</g-link>
-          <!-- <g-link class="navlink" to="/mini-courses" exact>Mini Courses</g-link> -->
+          <!-- <g-link class="navlink" to="/tutorials" exact>Tutorials</g-link> -->
         </div>
       </nav>
     </div>
@@ -99,6 +99,7 @@ export default {
           padding-bottom: 5px;
 
           .site-name {
+            border-bottom: none;
             font-size: 1.6rem;
             color: lighten($primary, 65%);
           }
@@ -110,6 +111,7 @@ export default {
           align-items: center;
 
           .navlink {
+            border-bottom: none;
             padding: 7px 0;
             font-size: 1.25rem;
             color: lighten($primary, 65%);
