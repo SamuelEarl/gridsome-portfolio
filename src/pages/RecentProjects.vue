@@ -1,12 +1,13 @@
 <template>
   <Layout>
     <h1>Recent Projects</h1>
-    <p>(Describe the stack that is used (e.g. Vue.js, Vue Router, Vuex, D3.js) and the features along with GIFs showing those features.)</p>
+
+    <!-- <p>(Describe the stack that is used [e.g. Vue.js, Vue Router, Vuex, D3.js, serverless functions, Neo4j, GraphQL] and the features along with GIFs showing those features.)</p> -->
 
     <div class="content">
       <h2>Real-time Data Dashboard</h2>
 
-      <p>I did some work for a large manufacturing company that needed a second-by-second data dashboard. This app provides real-time status updates on various stations and equipment throughout the manufacturing facility. The front-end is a single-page application (SPA) written in Vue.js, Vue Router, and Vuex. All the UI components are custom made and the entire app (including the navigation and all the various windows) is completely mobile-responsive.</p>
+      <p>I did some work for a large manufacturing company that needed a second-by-second data dashboard. This app provides real-time status updates on various stations and equipment throughout the manufacturing facility. The front-end is a single-page application (SPA) written with Vue.js, Vue Router, and Vuex. All the UI components are custom made and the entire app (including the navigation and all the various windows) is completely mobile-responsive.</p>
 
       <p><strong>These are some of the features in this app:</strong></p>
 
@@ -24,16 +25,16 @@
 
       <h3>Collapsible Side Panel With Auto-adjusting Charts</h3>
       <g-image alt="Auto-adjusting charts" src="~/assets/img/auto-adjusting-charts.gif" class="data-dashboard-image" />
-      <p class="caption">This feature allows users to get a larger view of the charts for a bit more of a detailed view. The real magic is that the charts auto-adjust their size to fit the available space.</p>
+      <p class="caption">This feature allows users to get a larger view of the charts for a more detailed view. The real magic is that the charts auto-adjust their size to fit the available space.</p>
 
 
-      <p><strong>NOTE:</strong> I wrote the original back-end server in Node.js with MongoDB and WebSockets. However, after working on the project for a while, our team realized that Go would be a better fit for what we needed.</p>
+      <p><em><strong>NOTE:</strong> I wrote the original back-end server in Node.js with MongoDB and WebSockets. However, after working on the project for a while, our team realized that Go would be a better fit for what we needed.</em></p>
     </div>
 
     <div class="content">
       <h2>Budget App</h2>
 
-      <p>This app uses Vue.js, serverless functions, and Neo4j (because I love graph databases &ndash; Neo4j in particular). I placed a high priority on security (explained below) and spent a lot of time working on the UX (with a lot of user feedback from my wife).</p>
+      <p>This app uses Vue.js, serverless functions, and Neo4j (because I love graph databases &mdash; Neo4j in particular). I placed a high priority on security (explained below) and spent a lot of time working on the UX (with a lot of user feedback from my wife).</p>
 
       <p><strong>These are some of the features in this app:</strong></p>
       <h3>Responsive Design and PWA</h3>
@@ -56,7 +57,7 @@
       <h2>Content Management System (CMS)</h2>
       <p><a href="https://github.com/SamuelEarl/ink-cms-vue-hapi-neo4j">GitHub Repo</a></p>
 
-      <p>I created this CMS as a hobby project to learn backend development better and to learn Docker. I wrote it as a single-page app with Vue.js in the front-end, hapi.js as the Node.js server, Neo4j as the database, and used Docker Compose for a multi-container Docker environment.</p>
+      <p>I created this CMS as a hobby project to learn backend development better and to learn Docker. I wrote it as a single-page app with Vue.js in the front-end, hapi.js as the Node.js server, Neo4j as the database, and used I Docker Compose for a multi-container Docker environment.</p>
 
       <p><strong>These are some of the features in this app:</strong></p>
 
@@ -78,18 +79,14 @@
         <g-image alt="CMS users" src="~/assets/img/cms-users.png" class="cms-laptop" />
       </div>
 
-      <p>I was experimenting with <code>try/catch/finally</code> blocks in this project, so the API endpoints are constructed a little differently from what you might normally see. I will probably convert this over to serverless functions later on and clean up some of the code and features.</p>
+      <p>Feel free to <a href="https://github.com/SamuelEarl/ink-cms-vue-hapi-neo4j">clone this repo</a> and check out the code. You could follow the instructions in the README to run this app on your computer in Docker, but it might be a bit of a hassle because my environment variables for the database and other features are not included in the repo.</p>
 
-      <p>This CMS project is a work-in-progress. I love to learn, and I also enjoy teaching what I learn. I am creating a course that is targeted toward beginner web developers, and this is the course project. I will use this app to teach about modern front-end development, mobile-responsive design, databases and CRUD operations, APIs, authentication, authorization, basic web security, data validation, testing, logging, Docker, and more.</p>
-
-      <p>Feel free to <a href="https://github.com/SamuelEarl/ink-cms-vue-hapi-neo4j">clone this repo</a> and follow the instructions in the README to run this app on your computer in Docker! Be aware that I developed this app in Linux and have not tested it on any other systems, so I can't guarantee that it will work for you.</p>
-
-      <p>I was experimenting with <code>try/catch/finally</code> blocks in this project, so the API endpoints are constructed a little differently from what you might normally see. I will probably convert this over to serverless functions later on and clean up some of the code and features.</p>
+      <p><em><strong>NOTE:</strong> I was experimenting with <code>try/catch/finally</code> blocks in this project, so the API endpoints are constructed a little differently from what you might normally see. I will probably convert this over to serverless functions and then clean up some of the code and features.</em></p>
     </div>
 
     <div class="content">
       <h2>Interactive Company Org Chart</h2>
-      <p>This company org chart is part of a larger project. It uses Vue components and Vuex to handle state management and D3.js to handle the visualizations and interactivity with the chart.</p>
+      <p>This company org chart is part of a larger project. It uses Vue components and Vuex to handle state management and D3.js to handle the visualizations and chart interactivity.</p>
 
       <p><strong>These are some of the features in this app:</strong></p>
 
@@ -99,19 +96,19 @@
 
       <h3>Search By First Name, Last Name, Or Title</h3>
       <g-image alt="Search for people" src="~/assets/img/search-for-people.gif" class="org-chart-image" />
-      <p class="caption">The user can search for an individual by first name, last name, or title. When the user clicks on one of the people in the search results, that person is centered in the org chart. The user can then perform an action, such as view the person's profile, move the person to another place in the org chart, add a new person to the chart, etc.</p>
+      <p class="caption">Users can search for an individual by first name, last name, or title. When the user clicks on one of the people in the search results, that person is centered in the org chart. The user can then perform an action, such as view the person's profile, move the person to another place in the org chart, add a new person to the chart, etc.</p>
 
       <h3>Click To Center</h3>
       <g-image alt="Center a person" src="~/assets/img/click-to-center.gif" class="org-chart-image" />
       <p class="caption">When a user clicks on a person's card in the org chart, that person's card will be centered and highlighted for a couple of seconds.</p>
 
-      <p><em>There are still plenty of other features that I need to implement before this will be production ready, but this is a start.</em></p>
+      <p><em><strong>NOTE:</strong> There are still plenty of other features that I need to implement before this will be production ready, but this is a start.</em></p>
 
     </div>
 
     <div class="content">
       <h2>Education Website</h2>
-      <p>The front-end is a single-page application (SPA) written in Vue.js/Vuex/Vue Router. Each page is designed to be completely mobile-responsive using the Stylus CSS preprocessor. All UI components (e.g. dropdown menus, accordion menus, modal dialog boxes) are custom made without the use of any pre-built component libraries. The back-end is written in hapi.js (a Node.js framework). The database is Neo4j (a NoSQL graph database).</p>
+      <p>The front-end is a single-page application (SPA) written with Vue.js, Vue Router, and Vuex. Each page is designed to be completely mobile-responsive using the Stylus CSS preprocessor. All UI components (e.g. dropdown menus, accordion menus, modal dialog boxes, image dropzones) are custom made without the use of any pre-built component libraries. The back-end is written in hapi.js (a Node.js framework). The database is Neo4j (a NoSQL graph database).</p>
 
       <div class="edu-app-images">
         <g-image alt="iPhone layout" src="~/assets/img/ti-iphone.png" class="edu-app-phone" />
@@ -119,9 +116,9 @@
         <g-image alt="iPhone layout" src="~/assets/img/ti-macbook.png" class="edu-app-laptop" />
       </div>
 
-      <p>In this website users can create accounts, sign-in, and create or take courses. The website administrator can grant or revoke permissions for various permissions levels. The course pages utilitize WYSIWYG editors with media plugins that allow users to type text or embed images and videos — similar to content management systems.</p>
+      <p>This website allows users to create accounts, sign-in, create their own courses, and take courses. The website administrator can grant or revoke permissions for various permissions levels. The course pages utilitize WYSIWYG editors with media plugins that allow users to type text or embed images and videos &mdash; similar to content management systems.</p>
 
-      <p><em>NOTE: This was a project that I worked on a while back as I was learning backend development. I developed it using Docker containers, but it is lacking in some areas (especially the auth flow). I plan on converting the backend to use serverless functions and updating the auth security.</em></p>
+      <p><em><strong>NOTE:</strong> This was a project that I worked on a while back as I was learning backend development. I developed it using Docker containers, but it is lacking in some areas (especially the auth flow). I plan on converting the backend to use serverless functions and then I will update the auth flow.</em></p>
     </div>
   </Layout>
 </template>
