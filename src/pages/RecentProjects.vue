@@ -33,18 +33,16 @@
     <div class="content">
       <h2>Budget App</h2>
 
-      <p>This app uses Vue.js, serverless functions, and Neo4j (because I love graph database &ndash; Neo4j in particular). I placed a high priority on security (explained below) and spent a lot of time working on the UX (with a lot of user feedback from my wife).</p>
+      <p>This app uses Vue.js, serverless functions, and Neo4j (because I love graph databases &ndash; Neo4j in particular). I placed a high priority on security (explained below) and spent a lot of time working on the UX (with a lot of user feedback from my wife).</p>
 
       <p><strong>These are some of the features in this app:</strong></p>
       <h3>Responsive Design and PWA</h3>
       <div class="images-container">
         <g-image alt="Budget app mobile 1" src="~/assets/img/budget-app-mobile-1.png" class="mobile-image" />
         <g-image alt="Budget app mobile 2" src="~/assets/img/budget-app-mobile-2.png" class="mobile-image" />
-      </div>
-      <div class="images-container">
         <g-image alt="Budget app desktop" src="~/assets/img/budget-app-desktop.png" class="desktop-image" />
       </div>
-      <p class="caption">Every feature of this app is designed for both mobile and desktop devices. Every feature was meticulously designed with a mobile-first approach. This app is also implemented as a Progressive Web App (PWA) to provide a better user experience for mobile users.</p>
+      <p class="caption">Every feature of this app was implemented with a mobile-first design. This app is also a Progressive Web App (PWA), which provides a better experience for mobile users.</p>
 
       <h3>Web App Security</h3>
       <p>I take web app security very seriously. I did a lot of research to find out how to implement auth security correctly to protect my users. There are a lot of ideas out there about how security should be handled, but many of those ideas seem to be "quick and dirty" (i.e. lazy) approaches that do not secure a web app properly. The auth security in this app is implemented by using a refresh token and an access token. The access token has a short expiration period and when it expires the user is given a new access token. This process repeats until the refresh token expires, at which point the user is prompted to login again. The refresh token is also rotated periodically, but it maintains the same expiration time. The ideas that I use for security come mostly from these two posts:</p>
@@ -107,12 +105,12 @@ export default {
       align-items: center;
 
       .mobile-image {
-        width: 250px;
+        width: 175px;
         margin-bottom: 20px;
       }
 
       .desktop-image {
-        width: 100%;
+        max-width: 640px;
       }
     }
 
@@ -128,13 +126,32 @@ export default {
   }
 }
 
+@media $m-up {
+  .content {
+
+    .images-container {
+      flex-direction: row;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+
+      .mobile-image {
+        // styles
+      }
+
+      .desktop-image {
+        max-width: 640px;
+      }
+    }
+  }
+}
+
 @media $xl-up {
   .content {
 
     .images-container {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
+      align-items: flex-end;
+      justify-content: space-between;
+      flex-wrap: nowrap;
       margin-bottom: 20px;
 
       .mobile-image {
@@ -142,7 +159,7 @@ export default {
       }
 
       .desktop-image {
-        width: 75%;
+        width: 60%;
       }
     }
   }

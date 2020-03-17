@@ -8,7 +8,7 @@
           title="Open Menu"
           @click="showMobileNav"
         >
-          <MenuIcon title="Open Menu" />
+          <MenuIcon class="mobile-menu-icon" title="Open Menu" />
         </button>
       </div>
     </div>
@@ -77,8 +77,11 @@ export default {
       background-color: $primary;
 
       .mobile-menu-btn {
-        color: white;
         font-size: 2rem;
+
+        .mobile-menu-icon {
+          color: white;
+        }
       }
     }
 
@@ -102,6 +105,12 @@ export default {
             border-bottom: none;
             font-size: 1.6rem;
             color: lighten($primary, 65%);
+            &:hover {
+              color: white;
+            }
+            &.active {
+              color: white;
+            }
           }
         }
 
@@ -115,6 +124,12 @@ export default {
             padding: 7px 0;
             font-size: 1.25rem;
             color: lighten($primary, 65%);
+            &:hover {
+              color: white;
+            }
+            &.active {
+              color: white;
+            }
           }
         }
       }
@@ -150,12 +165,6 @@ export default {
           .site-name {
             font-size: 1.6rem;
             // color: lighten($primary, 75%);
-            &:hover {
-              color: white;
-            }
-            &.active {
-              color: white;
-            }
           }
         }
 
@@ -169,12 +178,6 @@ export default {
             // padding: 7px 0;
             // font-size: 1.25rem;
             // color: white;
-            &:hover {
-              color: white;
-            }
-            &.active {
-              color: white;
-            }
           }
         }
       }
