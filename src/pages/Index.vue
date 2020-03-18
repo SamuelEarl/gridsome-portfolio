@@ -36,15 +36,17 @@ export default {
 
   computed: {
     isXL() {
-      const width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+      if (process.isClient) {
+        const width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
-      // If the viewport width is xlMin or larger, then return true.
-      if (width >= this.$xlMin) {
-        return true;
-      }
-      // If the viewport width is less than xlMin, then return false.
-      else {
-        return false;
+        // If the viewport width is xlMin or larger, then return true.
+        if (width >= this.$xlMin) {
+          return true;
+        }
+        // If the viewport width is less than xlMin, then return false.
+        else {
+          return false;
+        }
       }
     }
   }

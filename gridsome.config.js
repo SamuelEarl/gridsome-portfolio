@@ -28,6 +28,8 @@ function addStyleResource (rule) {
 }
 
 module.exports = {
+  siteUrl: "https://samuelearl.github.io/",
+  pathPrefix: "/portfolio",
   siteName: "Samuel Earl",
   plugins: [],
   css: {
