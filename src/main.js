@@ -7,11 +7,6 @@ import Layout from "~/layouts/Layout.vue";
 import "vue-material-design-icons/styles.css";
 
 export default function (Vue, { router, head, isClient }) {
-  // if (isClient) {
-  //   console.log("WINDOW:", window);
-  //   window = window;
-  // }
-
   // Min and Max media query ranges:
   Vue.prototype.$xsMin = 0;
   Vue.prototype.$xsMax = 600;

@@ -36,6 +36,7 @@ export default {
 
   computed: {
     isXL() {
+      // The window object is not defined on the server, so the build process with throw an error when it see "window" and say "window is not defined". So you have to wrap it in an "if (process.isClient)" conditional to prevent that error.
       if (process.isClient) {
         const width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
