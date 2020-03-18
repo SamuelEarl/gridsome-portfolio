@@ -34,7 +34,7 @@ export default {
   .home-layout {
 
     .main {
-      padding-top: 20px;
+      padding-top: 70px;
     }
   }
 }

@@ -1,25 +1,23 @@
 <template>
   <HomeLayout>
-    <div class="home">
+    <div class="index">
       <div class="parallax">
         <div class="overlay">
           <div class="container">
             <div class="profile">
               <div class="picture">
-                <g-image alt="profile photo" src="~/assets/img/profile-photo-color-200x200.png" />
+                <g-image alt="profile photo" src="~/assets/img/profile-photo-gray-scale-200x200.png" />
               </div>
               <div class="text">
                 <h1>Samuel Earl</h1>
-                <h2 class="tagline">
-                  Web Developer<br v-if="!isXL"><span v-if="isXL"> | </span>Product Creator
-                </h2>
+                <h2>Web Developer</h2>
               </div>
             </div>
 
             <div class="content">
-              <p>I love business and product development! Behind every web application is a business that needs to be profitable. I help businesses and new product launches to be profitable and successful.</p>
+              <p>I love business and product development! Behind every web application is a business that needs to be profitable. I help businesses and products to be profitable and successful.</p>
 
-              <p>Much of my background is in business, so when I create web apps I consult with others on the team to make sure that we are creating apps that will help the business be successful. I am a huge proponent of following the Lean Startup and agile development methodologies to create the right products that users will buy.</p>
+              <p>Much of my background is in business, so when I create web apps I consult with others on the team to make sure that we are creating apps that will help the business be successful. I am a huge proponent of following the Lean Startup and agile development methodologies to create products that users want.</p>
             </div>
           </div>
         </div>
@@ -33,32 +31,12 @@ export default {
   metaInfo: {
     title: "Portfolio"
   },
-
-  computed: {
-    isXL() {
-      // The window object is not defined on the server, so the build process with throw an error when it see "window" and say "window is not defined". So you have to wrap it in an "if (process.isClient)" conditional to prevent that error by running browser-only code. See:
-      // * https://github.com/gridsome/gridsome/issues/800#issuecomment-551155686
-      // * https://gridsome.org/docs/client-api/#isclient
-      if (process.isClient) {
-        const width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-
-        // If the viewport width is xlMin or larger, then return true.
-        if (width >= this.$xlMin) {
-          return true;
-        }
-        // If the viewport width is less than xlMin, then return false.
-        else {
-          return false;
-        }
-      }
-    }
-  }
 }
 </script>
 
 <style lang="stylus" scoped>
 @media $xs-up {
-  .home {
+  .index {
 
     .profile {
       margin-bottom: 10px;
@@ -68,26 +46,31 @@ export default {
         //
       }
 
-      h1 {
-        font-family: $cursive-font-stack;
-        font-size: 3rem;
-      }
-      .tagline {
-        margin-top: -10px;
-        font-family: $cursive-font-stack;
-        font-size: 1.5rem;
+      .text {
+
+        h1 {
+          font-family: $cursive-font-stack;
+          font-size: 3rem;
+        }
+        h2 {
+          margin-top: -10px;
+          font-family: $cursive-font-stack;
+          font-size: 2rem;
+          background-color: transparent;
+          color: $text;
+        }
       }
     }
   }
 }
 
 @media $xl-up {
-  .home {
+  .index {
 
     .parallax {
       // The image used.
-      // background-image: url("../assets/img/canyon-sky-landscape.jpg");
-      background-image: url("../assets/img/a-view-of-the-stars-on-night-sky.jpg");
+      background-image: url("../assets/img/canyon-sky-landscape.jpg");
+      // background-image: url("../assets/img/a-view-of-the-stars-on-night-sky.jpg");
 
       // Set a specific height.
       height: 100vh;
@@ -126,15 +109,9 @@ export default {
               color: white;
             }
 
-            .tagline {
-              font-size: 2.2rem;
-              background-color: transparent;
+            h2 {
+              font-size: 2.5rem;
               color: white;
-
-              span {
-                font-family: inherit;
-                color: inherit;
-              }
             }
           }
         }

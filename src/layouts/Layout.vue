@@ -36,7 +36,7 @@ export default {
     min-height: 100vh;
 
     .main {
-      padding-top: 0;
+      padding-top: 60px;
       padding-bottom: 20px;
     }
   }
