@@ -55,7 +55,7 @@
 
     <div class="content">
       <h2>Content Management System (CMS)</h2>
-      <p><a href="https://github.com/SamuelEarl/ink-cms-vue-hapi-neo4j">GitHub Repo</a></p>
+      <p><a href="https://github.com/SamuelEarl/ink-cms-vue-hapi-neo4j" target="_blank">GitHub Repo</a></p>
 
       <p>I created this CMS as a hobby project to learn backend development better and to learn Docker. I wrote it as a single-page app with Vue.js in the front-end, hapi.js as the Node.js server, Neo4j as the database, and used I Docker Compose for a multi-container Docker environment.</p>
 
@@ -79,7 +79,7 @@
         <g-image alt="CMS users" src="~/assets/img/cms-users.png" class="cms-laptop" />
       </div>
 
-      <p>Feel free to <a href="https://github.com/SamuelEarl/ink-cms-vue-hapi-neo4j">clone this repo</a> and check out the code. You could follow the instructions in the README to run this app on your computer in Docker, but it might be a bit of a hassle because my environment variables for the database and other features are not included in the repo.</p>
+      <p>Feel free to <a href="https://github.com/SamuelEarl/ink-cms-vue-hapi-neo4j" target="_blank>clone this repo</a> and check out the code. You could follow the instructions in the README to run this app on your computer in Docker, but it might be a bit of a hassle because my environment variables for the database and other features are not included in the repo.</p>
 
       <p><em><strong>NOTE:</strong> I was experimenting with <code>try/catch/finally</code> blocks in this project, so the API endpoints are constructed a little differently from what you might normally see. I will probably convert this over to serverless functions and then clean up some of the code and features.</em></p>
     </div>
