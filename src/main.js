@@ -7,6 +7,11 @@ import Layout from "~/layouts/Layout.vue";
 import "vue-material-design-icons/styles.css";
 
 export default function (Vue, { router, head, isClient }) {
+  head.link.push({
+    rel: "stylesheet",
+    href: "https://fonts.googleapis.com/css2?family=Kalam&family=Open+Sans&display=swap"
+  }),
+
   // Min and Max media query ranges:
   Vue.prototype.$xsMin = 0;
   Vue.prototype.$xsMax = 600;
@@ -18,10 +23,6 @@ export default function (Vue, { router, head, isClient }) {
   Vue.prototype.$lMax = 1199;
   Vue.prototype.$xlMin = 1200;
 
-  head.link.push({
-    rel: "stylesheet",
-    href: "https://fonts.googleapis.com/css2?family=Kalam&family=Open+Sans&display=swap"
-  }),
   // Set HomeLayout as a global component
   Vue.component("HomeLayout", HomeLayout);
   Vue.component("Layout", Layout);

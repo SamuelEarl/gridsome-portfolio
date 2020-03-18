@@ -10,12 +10,7 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 const path = require("path");
-const purgecss = require("@fullhuman/postcss-purgecss");
 const postcssPlugins = [];
-
-if (process.env.NODE_ENV === "production") {
-  postcssPlugins.push(purgecss());
-}
 
 function addStyleResource (rule) {
   rule.use("style-resource")
@@ -29,7 +24,6 @@ function addStyleResource (rule) {
 
 module.exports = {
   siteUrl: "https://samuelearl.github.io/",
-  pathPrefix: "/portfolio",
   siteName: "Samuel Earl",
   plugins: [],
   css: {
