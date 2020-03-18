@@ -17,7 +17,7 @@
             <div class="content">
               <p>I love business and product development! Behind every web application is a business that needs to be profitable. I help businesses and products to be profitable and successful.</p>
 
-              <p>Much of my background is in business, so when I create web apps I consult with others on the team to make sure that we are creating apps that will help the business be successful. I am a huge proponent of following the Lean Startup and agile development methodologies to create products that users want.</p>
+              <p>Much of my background is in business, so when I create web apps I consult with others on the team to make sure that we are creating apps that will help the business be successful. I am a huge proponent of following the Lean Startup and agile development methodologies to create products that people want.</p>
             </div>
           </div>
         </div>
