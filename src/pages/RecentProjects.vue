@@ -57,7 +57,7 @@
       <h2>Content Management System (CMS)</h2>
       <p><a href="https://github.com/SamuelEarl/ink-cms-vue-hapi-neo4j" target="_blank">GitHub Repo</a></p>
 
-      <p>I created this CMS as a hobby project to learn backend development better and to learn Docker. I wrote it as a single-page app with Vue.js in the front-end, hapi.js as the Node.js server, Neo4j as the database, and used I Docker Compose for a multi-container Docker environment.</p>
+      <p>I created this CMS as a hobby project to learn backend development better and to learn Docker. I wrote it as a single-page app with Vue.js in the front-end, hapi.js as the Node.js server, Neo4j as the database, and I used Docker Compose for a multi-container Docker environment.</p>
 
       <p><strong>These are some of the features in this app:</strong></p>
 
