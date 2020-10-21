@@ -14,6 +14,8 @@
       <p>In the embedded systems project that I worked on, we needed to allow users to record real-time data for a given period of time, create a CSV file that was populated with those data, and then allow users to download the CSV file for further data analysis. That feature had to be implemented completely in the browser (i.e., no back-end code involved). That was a fun and challenging widget to create. The Fiddle above includes both the data recording and downloading features as well as a timer, so it is essentially two code samples in one.</p>
     </div>
 
+    <br>
+
     <div class="content">
       <h2>Input Field That Will Shrink To Fit The Width Of The Text</h2>
 

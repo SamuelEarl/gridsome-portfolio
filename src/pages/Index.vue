@@ -10,14 +10,14 @@
               </div>
               <div class="text">
                 <h1>Samuel Earl</h1>
-                <h2>Web Developer</h2>
+                <h2>Analyst &amp; Software Developer</h2>
               </div>
             </div>
 
             <div class="content">
-              <p>I love business and product development! Behind every web application is a business that needs to be profitable. I help businesses and products to be profitable and successful.</p>
+              <p>I love business and product development! Behind many software products are companies that need to be profitable. I help businesses and products to be profitable and successful.</p>
 
-              <p>Much of my background is in business, so when I create web apps I consult with others on the team to make sure that we are creating apps that will help the business be successful. I am a huge proponent of following the Lean Startup and agile development methodologies to create products that people want.</p>
+              <p>Much of my background is in business and software development. When I am working on a project I consult with my team members to make sure that we are creating software that will help the business be successful. I am a huge proponent of following the Lean Startup and agile development methodologies to create products that people want.</p>
             </div>
           </div>
         </div>

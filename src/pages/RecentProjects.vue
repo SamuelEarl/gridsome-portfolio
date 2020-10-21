@@ -31,27 +31,66 @@
       <p><em><strong>NOTE:</strong> I wrote the original back-end server in Node.js with MongoDB and WebSockets. However, after working on the project for a while, our team realized that Go would be a better fit for what we needed.</em></p>
     </div>
 
+    <br>
+
     <div class="content">
-      <h2>Budget App</h2>
+      <h2>Financial Wreck &ndash; <em>A personal finance app</em></h2>
 
-      <p>This app uses Vue.js, serverless functions, and Neo4j (because I love graph databases &mdash; Neo4j in particular). I placed a high priority on security (explained below) and spent a lot of time working on the UX (with a lot of user feedback from my wife).</p>
+      <p>This app is live at <a href="https://financialwreck.com/" target="_blank">FinancialWreck.com</a>. Finacial Wreck is free to use and you are welcome to sign up and try it out.</p>
 
-      <p><strong>These are some of the features in this app:</strong></p>
-      <h3>Responsive Design and PWA</h3>
       <div class="budget-app-images">
         <g-image alt="Budget app mobile 1" src="~/assets/img/budget-app-mobile-1.png" class="budget-app-phone" />
         <g-image alt="Budget app mobile 2" src="~/assets/img/budget-app-mobile-2.png" class="budget-app-phone" />
         <g-image alt="Budget app desktop" src="~/assets/img/budget-app-desktop.png" class="budget-app-laptop" />
       </div>
-      <p class="caption">Every feature of this app was implemented with a mobile-first design. This app is also a Progressive Web App (PWA), which provides a better experience for mobile users.</p>
 
-      <h3>Web App Security</h3>
-      <p>I take web app security very seriously. I did a lot of research to find out how to implement auth security correctly to protect my users. There are a lot of ideas out there about how security should be handled, but many of those ideas seem to be "quick and dirty" (i.e. lazy) approaches that do not secure a web app properly. The auth security in this app is implemented by using a refresh token and an access token. The access token has a short expiration period and when it expires the user is given a new access token. This process repeats until the refresh token expires, at which point the user is prompted to login again. The refresh token is also rotated periodically, but it maintains the same expiration time. The ideas that I use for security come mostly from these two posts:</p>
+      <br>
+
+      <p>I wrote this app with Vue.js, serverless functions, and FaunaDB.</p>
+
+      <p><strong>These are some of the features in this app:</strong></p>
+
+      <ul>
+        <li>Complete authentication flow using passwordless login and magic links</li>
+        <li>Mobile first design</li>
+        <li>Fully customizable budgets</li>
+        <li>All edits are auto-saved</li>
+        <li>Summaries for income, expenses, budgeted amounts, and bank account balance</li>
+        <li>Invite another user to share your account</li>
+      </ul>
+
+      <!-- <h3>Web App Security</h3>
+      <p>I take web app security very seriously. I did a lot of research to find out how to implement auth security correctly to protect my users. There are a lot of ideas out there about how security should be handled, but many of those ideas seem to be "quick and dirty" approaches that do not secure a web app properly. I rewrote the auth flow a few times while I was testing out different ideas. During this process I discovered <a href="https://magic.link/" target="_blank">Magic</a> and decided to use passwordless authentication, which is very secure and allows for quick and easy user authentication.</p> -->
+
+      <!-- <p>The auth security in this app is implemented by using a refresh token and an access token. The access token has a short expiration period and when it expires the user is given a new access token. This process repeats until the refresh token expires, at which point the user is prompted to login again. The refresh token is also rotated periodically, but it maintains the same expiration time. The ideas that I use for security come mostly from these two posts:</p>
       <ul>
         <li><a href="https://medium.com/hackernoon/the-best-way-to-securely-manage-user-sessions-91f27eeef460" target="_blank">The best way to securely manage user sessions</a></li>
         <li><a href="https://hasura.io/blog/best-practices-of-using-jwt-with-graphql/" target="_blank">The Ultimate Guide to handling JWTs on frontend clients (GraphQL)</a></li>
-      </ul>
+      </ul> -->
     </div>
+
+    <br>
+
+    <div class="content">
+      <h2>A Human Resources App</h2>
+      <p>The following images of a company org chart are part of a larger project that is being created with Svelte.js, GraphQL, D3.js, Dgraph, and serverless functions.</p>
+
+      <p><strong>These are some of the features in this app:</strong></p>
+
+      <h3>Full Zoom And Pan Capability</h3>
+      <g-image alt="Zoom and pan" src="~/assets/img/zoom-and-pan.gif" class="org-chart-image" />
+      <p class="caption">The zoom and pan feature allows users to see and navigate the entire organization easily. This is especially helpful for very large organizations where a list view would be too cumbersome to work with.</p>
+
+      <h3>Search By First Name, Last Name, Or Title</h3>
+      <g-image alt="Search for people" src="~/assets/img/search-for-people.gif" class="org-chart-image" />
+      <p class="caption">Users can search for an individual by first name, last name, or title. When the user clicks on one of the people in the search results, that person is centered in the org chart. The user can then perform an action, such as view the person's profile, move the person to another place in the org chart, add a new person to the chart, etc.</p>
+
+      <h3>Click To Center</h3>
+      <g-image alt="Center a person" src="~/assets/img/click-to-center.gif" class="org-chart-image" />
+      <p class="caption">When a user clicks on a person's card in the org chart, that person's card will be centered and it will be highlighted for a couple of seconds.</p>
+    </div>
+
+    <br>
 
     <div class="content">
       <h2>Content Management System (CMS)</h2>
@@ -84,27 +123,7 @@
       <p><em><strong>NOTE:</strong> I was experimenting with <code>try/catch/finally</code> blocks in this project, so the API endpoints are constructed a little differently from what you might normally see. I will probably convert this over to serverless functions and then clean up some of the code and features.</em></p>
     </div>
 
-    <div class="content">
-      <h2>Interactive Company Org Chart</h2>
-      <p>This company org chart is part of a larger project. It uses Vue components and Vuex to handle state management and D3.js to handle the visualizations and chart interactivity.</p>
-
-      <p><strong>These are some of the features in this app:</strong></p>
-
-      <h3>Full Zoom And Pan Capability</h3>
-      <g-image alt="Zoom and pan" src="~/assets/img/zoom-and-pan.gif" class="org-chart-image" />
-      <p class="caption">The zoom and pan feature allows users to see and navigate the entire organization easily. This is especially helpful for very large organizations where a list view would be too cumbersome to work with.</p>
-
-      <h3>Search By First Name, Last Name, Or Title</h3>
-      <g-image alt="Search for people" src="~/assets/img/search-for-people.gif" class="org-chart-image" />
-      <p class="caption">Users can search for an individual by first name, last name, or title. When the user clicks on one of the people in the search results, that person is centered in the org chart. The user can then perform an action, such as view the person's profile, move the person to another place in the org chart, add a new person to the chart, etc.</p>
-
-      <h3>Click To Center</h3>
-      <g-image alt="Center a person" src="~/assets/img/click-to-center.gif" class="org-chart-image" />
-      <p class="caption">When a user clicks on a person's card in the org chart, that person's card will be centered and highlighted for a couple of seconds.</p>
-
-      <p><em><strong>NOTE:</strong> There are still plenty of other features that I need to implement before this will be production ready, but this is a start.</em></p>
-
-    </div>
+    <br>
 
     <div class="content">
       <h2>Education Website</h2>

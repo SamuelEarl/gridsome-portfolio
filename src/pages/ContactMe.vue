@@ -4,7 +4,7 @@
 
     <h2>LinkedIn</h2>
     <p>The best way to get in touch with me is through LinkedIn:</p>
-    <p><strong>linkedin (dot) com/in/samuel-earl-44034723</strong></p>
+    <p><strong>linkedin (dot) com/in/samuel-earl</strong></p>
   </Layout>
 </template>
 
