@@ -17,7 +17,7 @@
             <div class="content">
               <p>I love business and product development! Behind many software products are companies that need to be profitable. I help businesses and products to be profitable and successful.</p>
 
-              <p>Much of my background is in business and software development. When I am working on a project I consult with my team members to make sure that we are creating software that will help the business be successful. I am a huge proponent of following the Lean Startup and agile development methodologies to create products that people want.</p>
+              <p>Much of my background is in business and software development. When I am working on a project I consult with stakeholders and team members to make sure that we are creating software that will help the business be successful. I am a huge proponent of following the Lean Startup and agile development methodologies to create products that people want.</p>
             </div>
           </div>
         </div>
